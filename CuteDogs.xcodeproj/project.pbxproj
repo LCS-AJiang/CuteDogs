@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDE4563129F4D39D00AAD861 /* CuteDogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE4563029F4D39D00AAD861 /* CuteDogs.swift */; };
+		CDE4563429F4D95600AAD861 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE4563329F4D95600AAD861 /* NetworkService.swift */; };
 		CDF425A729F173A600F978D6 /* CuteDogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF425A629F173A600F978D6 /* CuteDogsApp.swift */; };
-		CDF425A929F173A700F978D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF425A829F173A700F978D6 /* ContentView.swift */; };
+		CDF425A929F173A700F978D6 /* CuteDogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF425A829F173A700F978D6 /* CuteDogsView.swift */; };
 		CDF425AB29F173A900F978D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF425AA29F173A900F978D6 /* Assets.xcassets */; };
 		CDF425AE29F173A900F978D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF425AD29F173A900F978D6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDE4563029F4D39D00AAD861 /* CuteDogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDogs.swift; sourceTree = "<group>"; };
+		CDE4563329F4D95600AAD861 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CDF425A329F173A600F978D6 /* CuteDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuteDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF425A629F173A600F978D6 /* CuteDogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDogsApp.swift; sourceTree = "<group>"; };
-		CDF425A829F173A700F978D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CDF425A829F173A700F978D6 /* CuteDogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDogsView.swift; sourceTree = "<group>"; };
 		CDF425AA29F173A900F978D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF425AD29F173A900F978D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +36,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDE4562F29F4D37500AAD861 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDE4563029F4D39D00AAD861 /* CuteDogs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDE4563229F4D91A00AAD861 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CDE4563329F4D95600AAD861 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		CDF4259A29F173A600F978D6 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				CDF425A629F173A600F978D6 /* CuteDogsApp.swift */,
-				CDF425A829F173A700F978D6 /* ContentView.swift */,
-				CDF425AA29F173A900F978D6 /* Assets.xcassets */,
+				CDF425A829F173A700F978D6 /* CuteDogsView.swift */,
+				CDE4562F29F4D37500AAD861 /* Model */,
+				CDE4563229F4D91A00AAD861 /* Service */,
 				CDF425AC29F173A900F978D6 /* Preview Content */,
 			);
 			path = CuteDogs;
@@ -62,6 +83,7 @@
 		CDF425AC29F173A900F978D6 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				CDF425AA29F173A900F978D6 /* Assets.xcassets */,
 				CDF425AD29F173A900F978D6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF425A929F173A700F978D6 /* ContentView.swift in Sources */,
+				CDF425A929F173A700F978D6 /* CuteDogsView.swift in Sources */,
+				CDE4563129F4D39D00AAD861 /* CuteDogs.swift in Sources */,
+				CDE4563429F4D95600AAD861 /* NetworkService.swift in Sources */,
 				CDF425A729F173A600F978D6 /* CuteDogsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
